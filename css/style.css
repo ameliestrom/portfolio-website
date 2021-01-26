@@ -1,15 +1,21 @@
 /*
 Colors used:
-Primary Color (Pastel Blue): #BDD4E2;
-Secondary Color (Pastel Green): #DFE2E1;
-Tri Color (Pastel Pink): #CFC5C3;
+#BDD4E2 (Pastel Blue)
+#DFE2E1(Pastel Green)
+#CFC5C3(Pastel Pink)
+
+Fonts used:
+Bodoni Moda - used for headings
+Spartan - used for regular text
 */
 img {
   width: 100%;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bodoni Moda', serif;
+}
 body {
-  
-  background-color: snow;
+  background-color: #FFFAFA;
   font-family: 'Spartan', sans-serif;
 font-size: 16px; /* Sets the font size to 16px */
 font-weight: 300; /* Sets the font weight to 300 */
@@ -20,6 +26,7 @@ color: #222831;
 h1, h2, h3, h4 {
 line-height: 1.4;
 }
+
 h1 {
 font-size: 2.75em;
 font-weight: 700;
@@ -37,4 +44,47 @@ font-weight: 400;
 h4 {
 font-size: 1.35em;
 font-weight: 400;
+}
+a {
+  color: #C4CDD5;
+  text-decoration: none;
+}
+a:visited {
+  color: #454F5B;
+}
+a:hover {
+  color: #637381;
+  text-decoration: underline;
+}
+a:focus {
+  color: #637381;
+  text-decoration: underline;
+}
+a:active {
+  color: #212B36;
+}
+.button {
+  display: inline-block;
+  background-color: #BDD4E2;
+  color: #FFFAFA;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #BDD4E2;
+  transition: 0.2s opacity;
+}
+.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+.button.contact {
+  background-color: #BDD4E2;
+  color: #FFFAFA;
+  font-weight: 400;
+  padding: 10px;
+  border: 2px solid #BDD4E2;
+}
+.button.contact:hover {
+  opacity: 1,0;
+  text-decoration: none;
 }
