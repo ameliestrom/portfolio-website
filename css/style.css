@@ -157,6 +157,10 @@ selector {
   width: 1200px;
 }
 
+selector {
+  width: 80%;
+}
+
 /* Layout styling */
 
 #hero {
