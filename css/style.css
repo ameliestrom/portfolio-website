@@ -8,83 +8,305 @@ Fonts used:
 Bodoni Moda - used for headings
 Spartan - used for regular text
 */
+
+* {
+  box-sizing: border-box;
+}
+
 img {
   width: 100%;
 }
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Bodoni Moda', serif;
-}
+
 body {
   background-color: #FFFAFA;
   font-family: 'Spartan', sans-serif;
-font-size: 16px; /* Sets the font size to 16px */
-font-weight: 300; /* Sets the font weight to 300 */
-line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-color: #222831;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #222831;
+}
+
+header {
+  width: 100%;
+  background-color: #ebe1e1;
+  text-align: center;
+  padding: 10px 0;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  border-bottom: 3px solid #ebe1e1;
+  position: fixed;
+  -webkit-box-shadow: -1px -1px 5px 0px rgba(50, 50, 50, 0.47);
+  -moz-box-shadow:    -1px -1px 5px 0px rgba(50, 50, 50, 0.47);
+  box-shadow:         -1px -1px 5px 0px rgba(50, 50, 50, 0.47);
+}
+
+main {
+  padding-top: 100px;
+}
+
+footer {
+  background-color: #ebe1e1;
+  text-align: center;
+  color: #000000;
+  bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bodoni Moda', serif;
 }
 
 h1, h2, h3, h4 {
-line-height: 1.4;
+  line-height: 1.4;
 }
 
 h1 {
-font-size: 2.75em;
-font-weight: 700;
+  font-size: 2.75em;
+  font-weight: 700;
 }
 
 h2 {
-font-size: 2.25em;
-font-weight: 700;
+  font-size: 2.25em;
+  font-weight: 700;
 }
 
 h3 {
-font-size: 1.75em;
-font-weight: 400;
+  font-size: 1.75em;
+  font-weight: 400;
 }
+
 h4 {
-font-size: 1.35em;
-font-weight: 400;
+  font-size: 1.35em;
+  font-weight: 400;
 }
+
 a {
-  color: #C4CDD5;
+  color: #4a4a4a;
   text-decoration: none;
 }
+
 a:visited {
   color: #454F5B;
 }
+
 a:hover {
   color: #637381;
   text-decoration: underline;
 }
+
 a:focus {
   color: #637381;
   text-decoration: underline;
 }
+
 a:active {
   color: #212B36;
 }
+
 .button {
   display: inline-block;
   background-color: #BDD4E2;
-  color: #FFFAFA;
+  color: #4a4a4a;
   font-weight: 400;
+  text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #BDD4E2;
   transition: 0.2s opacity;
 }
+
 .button:hover {
   opacity: 0.8;
   text-decoration: none;
 }
+
+.button:active {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
 .button.contact {
+  display: inline-block;
   background-color: #BDD4E2;
-  color: #FFFAFA;
+  color: #4a4a4a;
   font-weight: 400;
   padding: 10px;
   border: 2px solid #BDD4E2;
 }
+
 .button.contact:hover {
-  opacity: 1,0;
+  opacity: 1, 0;
   text-decoration: none;
+}
+
+.button.contact:active {
+  opacity: 1, 0;
+  text-decoration: none;
+}
+
+selector {
+  margin: 0 auto;
+}
+
+selector {
+  position: relative;
+}
+
+selector {
+  width: 1200px;
+}
+
+/* Layout styling */
+
+#hero {
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero h1 {
+  text-align: center;
+}
+
+#curator h1 {
+  text-align: center;
+}
+
+#designprocess h2 {
+  text-align: center;
+}
+
+#discovery h2 {
+  text-align: center;
+}
+
+#competitiveanalysis h3 {
+  text-align: center;
+}
+
+#define h2 {
+  text-align: center;
+}
+
+#features h4 {
+  text-align: center;
+}
+
+#ideation h2 {
+  text-align: center;
+}
+
+#wireframes h3 {
+  text-align: center;
+}
+
+#wireframes1 h3 {
+  text-align: center;
+}
+
+#UI h2 {
+  text-align: center;
+}
+
+#moodboard h3 {
+  text-align: center;
+}
+
+#prototype h2 {
+  text-align: center;
+}
+
+#Recap h3 {
+  text-align: center;
+}
+
+#screens h2, h3 {
+  text-align: center;
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+#footer {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#about {
+  padding-top: 15px;
+}
+
+.container {
+  padding: 0 15px;
+  max-width: 1200px;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+.logo {
+  max-width: 250px;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+nav {
+  width: 100%;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  display: inline-block;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+  text-decoration: none;
+}
+
+nav>ul>li>a:visited {
+  display: inline-block;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a
+}
+
+nav>ul>li>a:hover {
+  display: inline-block;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a
+}
+
+nav>ul>li>a:focus {
+  display: inline-block;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #3a566e
+}
+
+nav>ul>li>a:active {
+  display: inline-block;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a
 }
