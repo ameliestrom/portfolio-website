@@ -20,7 +20,7 @@ img {
 body {
   background-color: #FFFAFA;
   font-family: 'Spartan', sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
   line-height: 1.6;
   color: #222831;
@@ -110,7 +110,7 @@ a:active {
   color: #4a4a4a;
   font-weight: 400;
   text-decoration: none;
-  padding: 10px;
+  padding: 0.625em 1.875em;
   border-radius: 3px;
   border-bottom: 2px solid #BDD4E2;
   transition: 0.2s opacity;
@@ -131,7 +131,7 @@ a:active {
   background-color: #BDD4E2;
   color: #4a4a4a;
   font-weight: 400;
-  padding: 10px;
+  padding: 0.625em 1.875em;
   border: 2px solid #BDD4E2;
 }
 
@@ -276,7 +276,7 @@ nav>ul>li {
 
 nav>ul>li>a {
   display: inline-block;
-  font-size: 0,72em
+  font-size: 12px;
   padding: 0 8px;
   text-transform: uppercase;
   font-weight: 700;
@@ -314,4 +314,58 @@ nav>ul>li>a:active {
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a
+}
+
+.social svg {
+  width: 100px;
+  max-width: 40px;
+  height: auto;
+}
+
+.social ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.social li {
+  display: inline-block;
+  margin: 2em 0.5em 1em 0.5em;
+}
+
+#work h2 {
+  text-align: center;
+}
+
+#work h3 {
+  text-align: left;
+}
+
+.social .fab {
+  font-size: 2em;
+  color: #495464;
+}
+
+.social .fab:hover {
+  color: #95adbe;
+}
+
+.section {
+  padding: 1em 0;
+}
+
+footer {
+  padding: 2em 1em;
+}
+
+.copy {
+  font-size: 0.7em;
+  margin-bottom: 0em;
+}
+
+.title {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #4a4a4a;
 }
