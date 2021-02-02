@@ -31,10 +31,6 @@ header {
   background-color: #ebe1e1;
   text-align: center;
   padding: 10px 0;
-  padding-top: 10px;
-  padding-right: 5px;
-  padding-bottom: 10px;
-  padding-left: 5px;
   border-bottom: 3px solid #ebe1e1;
   position: fixed;
   -webkit-box-shadow: -1px -1px 5px 0px rgba(50, 50, 50, 0.47);
@@ -43,7 +39,7 @@ header {
 }
 
 main {
-  padding-top: 100px;
+  padding-top: 102px;
 }
 
 footer {
@@ -146,8 +142,8 @@ a:active {
   text-decoration: none;
 }
 
-.button:hover {
-  opacity: 0.8;
+#work .button {
+  margin-bottom: 2em;
 }
 
 selector {
@@ -248,6 +244,10 @@ selector {
   padding-top: 15px;
 }
 
+#work {
+  text-align: center;
+}
+
 .container {
   padding: 0 15px;
   max-width: 1200px;
@@ -273,6 +273,7 @@ nav {
 nav>ul {
   list-style-type: none;
   padding: 0;
+  margin-bottom: 0;
 }
 
 nav>ul>li {
@@ -282,7 +283,7 @@ nav>ul>li {
 nav>ul>li>a {
   display: inline-block;
   font-size: 12px;
-  padding: 0 8px;
+  padding: 0 7px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
@@ -343,7 +344,7 @@ nav>ul>li>a:active {
 }
 
 #work h3 {
-  text-align: left;
+  text-align: center;
 }
 
 .social .fab {
@@ -383,66 +384,26 @@ footer {
   display: block;
 }
 
-@media only screen and (min-width: 640px) {
+#about-page h3 {
+  margin-top: 0;
 }
 
-header {
-  text-align: unset;
-  padding: 20px 0 13px;
+#about h1 {
+  text-align: center;
 }
 
-nav {
-  width: auto;
-  float: right;
-  margin-top: 4px;
+#skillstools h2 {
+  text-align: center;
 }
 
-.col-md-6 {
-  width: 50%;
-}
-
-[class*="col-"] {
-  float: left;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-  padding: 10px;
-}
-
-@media only screen and (min-width: 1024px) {
-}
-
-.col-md-6 {
-  width: 50%;
-}
-
-[class*="col-"] {
-  float: left;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-  padding: 10px;
-}
-
-@media only screen and (min-width: 1440px) {
-}
-
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#about-page h3 { margin-top: 0;}
+/*
+Animation
+*/
 
 .berlin-illustration {
-  width 100%, max-width 100%, height: auto;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 @keyframes color-change {
@@ -470,4 +431,78 @@ nav {
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/*
+Media Queries
+*/
+
+@media only screen and (min-width: 640px) {
+
+header {
+  text-align: unset;
+  padding: 20px 0 13px;
+}
+
+nav {
+  width: auto;
+  float: right;
+  margin-top: 7px;
+}
+
+nav>ul {
+  margin-top: 0;
+}
+
+#work h3 {
+  margin-top: 0;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  padding: 10px;
+}
+
+.project h2, .project h3, .project h4, .project p, .project ul {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto; 
+}
+}
+
+@media only screen and (min-width: 1024px) {
+
+.col-md-6 {
+  width: 50%;
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  padding: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 1440px) {
 }
