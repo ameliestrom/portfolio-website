@@ -29,8 +29,7 @@ body {
 header {
   width: 100%;
   background-color: #ebe1e1;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   border-bottom: 3px solid #ebe1e1;
   position: fixed;
   -webkit-box-shadow: -1px -1px 5px 0px rgba(50, 50, 50, 0.47);
@@ -39,7 +38,7 @@ header {
 }
 
 main {
-  padding-top: 102px;
+  padding-top: 56px;
 }
 
 footer {
@@ -266,18 +265,18 @@ selector {
   text-align: center;
 }
 
-nav {
-  width: 100%;
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
 }
 
 nav>ul {
   list-style-type: none;
   padding: 0;
-  margin-bottom: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -320,6 +319,18 @@ nav>ul>li>a:active {
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
 }
 
 .social svg {
@@ -450,8 +461,20 @@ nav {
   margin-top: 7px;
 }
 
-nav>ul {
-  margin-top: 0;
+nav > ul {
+  margin: 1em 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
 }
 
 #work h3 {
@@ -477,7 +500,7 @@ nav>ul {
 .project h2, .project h3, .project h4, .project p, .project ul {
   max-width: 800px;
   margin-left: auto;
-  margin-right: auto; 
+  margin-right: auto;
 }
 }
 
