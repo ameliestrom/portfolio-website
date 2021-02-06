@@ -265,12 +265,12 @@ selector {
   text-align: center;
 }
 
-.navtoggle.responsive li  {
-  display: block;
-}
-
 .navtoggle li:not(:last-child) {
   display: none;
+}
+
+.navtoggle.responsive li  {
+  display: block;
 }
 
 nav>ul {
