@@ -112,7 +112,7 @@ a:active {
   padding: 0.625em 1.875em;
   border-radius: 3px;
   border-bottom: 2px solid #BDD4E2;
-  transition: 0.2s; opacity;
+  transition: 0.2s;
 }
 
 .button:hover {
@@ -147,22 +147,6 @@ a:active {
 
 #work .button {
   margin-bottom: 2em;
-}
-
-selector {
-  margin: 0 auto;
-}
-
-selector {
-  position: relative;
-}
-
-selector {
-  width: 1200px;
-}
-
-selector {
-  width: 80%;
 }
 
 /* Layout styling */
@@ -543,6 +527,4 @@ nav>ul>li {
   margin-left: auto;
   margin-right: auto;
 }
-
-@media only screen and (min-width: 1440px) {
 }
